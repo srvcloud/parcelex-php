@@ -1,0 +1,48 @@
+{
+    "name": "srvcloud/parcelex-php",
+    "description": "Um php-client para a integração com a API do https://docs.parcelex.com.br.",
+    "type": "lib",
+    "keywords": [
+        "parcelex",
+        "pagamentos",
+        "payments brazil",
+        "pagamento brasil",
+        "parcelamento",
+        "boleto",
+        "parcelamento boleto",
+        "api"
+    ],
+    "homepage": "https://www.parcelex.com.br/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SRVCloud",
+            "email": "contato@srvcloud.com.br"
+        },
+        {
+            "name": "Hugo Zabini",
+            "email": "hugo.zabini98@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+      "test": [
+        "@composer install",
+        "vendor/bin/phpunit tests"
+      ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Parcelex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    }
+}
